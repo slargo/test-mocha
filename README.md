@@ -1,0 +1,1 @@
+[![Build Status](http://195.244.98.120/api/badges/slargo/test-mocha/status.svg)](http://195.244.98.120/slargo/test-mocha)
