@@ -10,22 +10,22 @@ platform:
  
 steps:
 - name: test
- image: node
- commands:
- - npm install
- - npm test
- - name: docker 
- image: plugins/docker
- settings:
-   # registry: docker.io
-   repo: samuelandres/mocha-test
-   username:
-     from_secret: docker_username
-   password:
-     from_secret: docker_password
-   tags:
-     - mocha
-     - test
-     - nodejs
+  image: node
+  commands:
+  - npm install
+  - npm test
+- name: docker 
+  image: plugins/docker
+  settings:
+    # registry: docker.io
+    repo: samuelandres/mocha-test
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
+    tags:
+      - mocha
+      - test
+      - nodejs
 
 
